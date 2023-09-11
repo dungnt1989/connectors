@@ -1,0 +1,38 @@
+apiVersion: privatecloud.mendix.com/v1alpha1
+kind: MendixApp
+metadata:
+  name: standalone1
+  namespace: mxnamespace
+spec:
+  allowOverrideSecretsWithSecretStoreCSIDriver: false
+  appURL: 
+  database:
+    servicePlan: generalpurpose
+  mendixRuntimeVersion: 10.1.1.12532
+  replicas: 2
+  resources:
+    limits:
+      cpu: '1'
+      memory: 512Mi
+    requests:
+      cpu: 100m
+      memory: 512Mi
+  runtime:
+    customConfiguration: >-
+      {"ScheduledEventExecution":"NONE","MicroflowConstants":"{\"AmazonS3Connector.AccessKeyID\":\"AKIAZBM2K5BAIKBIX3VZ\",\"AmazonS3Connector.ClientCertificateID\":\"\",\"AmazonS3Connector.Duration\":\"0\",\"AmazonS3Connector.ProfileARN\":\"\",\"AmazonS3Connector.RoleARN\":\"\",\"AmazonS3Connector.SecretAccessKey\":\"EXF1HDOh4hp6FycXnd8Paj5Sw/3ZzZH6t3pAVY2m\",\"AmazonS3Connector.SessionName\":\"\",\"AmazonS3Connector.TrustAnchorARN\":\"\",\"AmazonS3Connector.UseStaticCredentials\":\"True\",\"AmazonS3Connector.Version\":\"2.0.1\",\"CommunityCommons.MergeMultiplePdfs_MaxAtOnce\":\"10\",\"Encryption.EncryptionKey\":\"12345678901234567890123456789012\",\"Encryption.EncryptionPrefix\":\"{AES3}\",\"Encryption.LegacyEncryptionKey\":\"\",\"Encryption.LogNode\":\"Encryption\",\"MicrosoftGraph.GraphLocation\":\"https://graph.microsoft.com/v1.0\",\"MicrosoftGraph.LoginLocation\":\"https://login.microsoftonline.com\",\"MicrosoftGraph.LogNode\":\"Microsoft
+      Graph\",\"MicrosoftGraph.MicrosoftGraphConnector_Version\":\"3.0.2\",\"MicrosoftGraph.ProxyHost\":\"\",\"MicrosoftGraph.ProxyPort\":\"0\",\"MicrosoftGraph_Applications.LogNode\":\"Microsoft
+      Graph\",\"MicrosoftGraph_Applications.MicrosoftGraphApplications_Version\":\"1.0.0\",\"MicrosoftGraph_Outlook.LogNode\":\"Microsoft
+      Graph
+      Outlook\",\"MicrosoftGraph_Outlook.MicrosoftGraphConnector_Version\":\"1.0.0\",\"NanoflowCommons.Nanoflow_Commons_Version\":\"4.0.0\"}","License.EnvironmentName":"e608d604-c148-4185-94bc-d1aba82ae604"}
+    dtapMode: D
+    logAutosubscribeLevel: INFO
+    mxAdminPassword: QWJjQDEyMzQ1Njc4
+    debuggerPassword: QWJjQDEyMzQ1Njc4
+    runtimeLicense: {}
+  runtimeMetricsConfiguration: {}
+  sourceURL: >-
+    https://package-store-prod-2.s3-accelerate.amazonaws.com/c6bae8ec-220c-41f5-8014-f91c50cc8284/63f3d46c66e88a2b6fb35af7dff0e6c8/main-0.1.0.986a1f54.mda?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXYS2GLE2BQXUZIJY%2F20230907%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230907T071921Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1d94d35b96d620adba1a87d7ff2d71cf90aa0fd7e4667e7f207ce8ee0fdd5b0e
+  sourceVersion: 0.1.0.986a1f54
+  storage:
+    servicePlan: mendixblob
+
