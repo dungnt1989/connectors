@@ -7,7 +7,7 @@ spec:
   allowOverrideSecretsWithSecretStoreCSIDriver: false
   appURL: 
   database:
-    servicePlan: generalpurpose
+    servicePlan: mxpostgre
   mendixRuntimeVersion: 10.1.1.12532
   replicas: 2
   resources:
