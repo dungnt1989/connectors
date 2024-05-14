@@ -31,7 +31,7 @@ spec:
     runtimeLicense: {}
   runtimeMetricsConfiguration: {}
   sourceURL: >-
-    https://package-store-prod-2.s3-accelerate.amazonaws.com/c6bae8ec-220c-41f5-8014-f91c50cc8284/63f3d46c66e88a2b6fb35af7dff0e6c8/main-0.1.0.986a1f54.mda?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXYS2GLE2BQXUZIJY%2F20230907%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230907T071921Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1d94d35b96d620adba1a87d7ff2d71cf90aa0fd7e4667e7f207ce8ee0fdd5b0e
+    #{mda_url}# 
   sourceVersion: 0.1.0.986a1f54
   storage:
     servicePlan: mendixblob
