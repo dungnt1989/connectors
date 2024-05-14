@@ -32,6 +32,6 @@ spec:
   runtimeMetricsConfiguration: {}
   sourceURL: >-
     #{mda_url}# 
-    storage:
+  storage:
     servicePlan: mendixblob
 
