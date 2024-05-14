@@ -2,13 +2,13 @@ apiVersion: privatecloud.mendix.com/v1alpha1
 kind: MendixApp
 metadata:
   name: standalone1
-  namespace: mxnamespace
+  namespace: mxconnector
 spec:
   allowOverrideSecretsWithSecretStoreCSIDriver: false
   appURL: 
   database:
     servicePlan: generalpurpose
-  mendixRuntimeVersion: 9.24.7.15248
+  mendixRuntimeVersion: 10.1.1.12532
   replicas: 2
   resources:
     limits:
